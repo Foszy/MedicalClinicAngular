@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.table, th, td{
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
