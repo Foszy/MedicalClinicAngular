@@ -1,0 +1,26 @@
+<form #UserData="ngForm" (ngSubmit)="onSubmit(UserData.value)" class="form-container">  
+    <div class="form-component">
+        <label for="name">Name: </label>
+        <input type="text" placeholder="Patient name" name="name" ngModel required>
+    </div>
+    <div class="form-component">
+        <label for="surname">Surname: </label>
+        <input type="text" placeholder="Patient surname" name="surname" ngModel required>
+    </div>
+    <!--<div class="form-component">
+        <label for="sex">Sex: </label>
+        <input type="checkbox" name="male" value="male" required ngModel>
+        <label for="sex">male</label>
+        <input type="checkbox" name="female" value="female" required ngModel>
+        <label for="sex">female</label>
+    </div>-->
+    <div class="form-component">
+        <label for="sex">Sex: </label>
+        <input type="sex" placeholder="Patient sex" name="sex" ngModel required>    
+    </div>
+    <div class="form-component">
+        <label for="pesel">Pesel: </label>
+        <input type="number" placeholder="Patient pesel" name="pesel" ngModel required>    
+    </div>
+    <button type="submit" class="btn send">Save patient</button>
+</form>
